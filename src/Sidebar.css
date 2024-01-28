@@ -1,0 +1,68 @@
+/* Sidebar.css */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: #817e95; /* Dark purple background */
+    color: #000000;
+    padding: 50px;
+    width: 200px;
+    height: 100vh;
+}
+
+.sidebar-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Increase gap between sidebar items */
+    cursor: pointer;
+    opacity: 0.5; /* Default state opacity */
+    transition: opacity 0.3s ease; /* Add a smooth transition effect for opacity */
+}
+
+.sidebar-option:hover,
+.sidebar-option.active {
+    opacity: 1; /* Increase opacity on hover and when active */
+    background-color: #2b10de; /* Dark purple background */
+    color: #ffffff;
+}
+
+.sidebar-icon {
+    /* Adjust icons size and add right margin */
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    /* Inherit opacity from parent */
+}
+
+.sidebar-label {
+    font-family: 'Nunito', sans-serif; /* Assuming Nunito is the font used */
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.82px;
+    /* Inherit opacity from parent */
+    /* Adding this would clip the text to a single line with an ellipsis if it overflows */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100px; /* Adjust sidebar width on mobile */
+        padding: 20px;
+    }
+
+    .sidebar-option {
+        margin-bottom: 10px; /* Adjust gap on mobile */
+    }
+
+    .sidebar-icon {
+        width: 15px; /* Adjust icon size on mobile */
+        height: 15px;
+        margin-right: 10px;
+    }
+
+    .sidebar-label {
+        display: none; /* Hide labels on mobile */
+    }
+}

@@ -1,0 +1,176 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  display: flex;
+  /* Remaining styles... */
+  
+}
+
+/* Styling for the left-side panel based on the Figma properties */
+.left-side {
+  background-color: #5F5AFF; 
+  width: 720px; 
+  height: 100vh; /* Full height */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1; /* Placed behind the content */
+  transform: skewX(-10deg); /* Skew the element to create a slant */
+  transform-origin: top left; /* Set the origin of the transformation */
+}
+
+/* Add styles for the header elements that would be placed on the blue background */
+.header {
+  padding: 20px; /* Adjust the padding as needed */
+  position: relative;
+  z-index: 1; /* Ensure the header is above the blue background */
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: white; /* Adjust as needed for visibility against blue background */
+  /* Remaining styles... */
+}
+
+.brand-logo {
+  width: 50px;
+  height: 50px;
+  margin: 50px;
+}
+
+.brand-name {
+  margin: 200px;
+  margin-top: -300px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 32px;
+  color: white;
+}
+
+/* signin.css */
+
+/* ... Your existing styles ... */
+
+.social-icons {
+  display: flex;
+  gap: 28px; 
+  margin: 170px;
+   /* Adjust the gap between icons as needed */
+}
+
+.social-icons img {
+  width: 28px; 
+  height: 28px; 
+}
+
+/* signin.css */
+
+/* Your existing styles... */
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px; /* Adjust the margin-top value to move the content down */
+  margin-left: 740px; /* Add margin to move the content to the right */
+}
+/* Styling for form elements */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; /* Adjust the margin-top value as needed */
+}
+
+.google-signin,
+.apple-signin {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust the gap between the icon and text as needed */
+}
+
+.google-signin img,
+.apple-signin img {
+  width: 24px; /* Adjust the width of the icon as needed */
+  height: 24px; /* Adjust the height of the icon as needed */
+}
+
+.google-signin p,
+.apple-signin p {
+  margin: 0;
+  color: rgba(8, 8, 8, 0.3)
+}
+.apple-signin {
+  display: flex;
+  align-items: center;
+  gap: 18px; /* Adjust the gap between the icon and text as needed */
+}
+
+.apple-signin img {
+  width: 24px; /* Adjust the width of the icon as needed */
+  height: 24px; /* Adjust the height of the icon as needed */
+}
+
+.apple-signin p {
+  margin: 0;
+}
+
+button {
+  width: 120px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  background-color: #5F5AFF; /* Adjust the background color as needed */
+  color: white; /* Adjust the text color as needed */
+  border: none;
+  border-radius: 4px; /* Adjust the border radius as needed */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4F4FEF; /* Adjust the hover background color as needed */
+}
+/* Add these styles to your existing CSS file or create a new one */
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333; /* Adjust color as needed */
+}
+
+.login-form input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333; /* Text color */
+  transition: border-color 0.3s ease-in-out;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #4C9AFF; /* Highlight color when focused */
+}
+
+/* Increase the weight and give a box-shadow effect when focused */
+.login-form input[type="email"]:focus,
+.login-form input[type="password"]:focus {
+  font-weight: 600;
+  box-shadow: 0 0 8px rgba(76, 154, 255, 0.3); /* Adjust shadow color and size */
+}
+
+

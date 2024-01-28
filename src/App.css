@@ -1,0 +1,70 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+  padding: 20px;
+  background-color: #ffffff;
+  color: rgb(13, 13, 13);
+  text-align: center;
+}
+
+.logo {
+  max-height: 60px; /* Adjust the value as needed */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-option {
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.sidebar-option.active {
+  font-weight: bold;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto; /* Add scroll if content overflows */
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column; /* Stack children vertically on mobile */
+  }
+
+  .content {
+    flex-direction: column; /* Stack children vertically on mobile */
+  }
+
+  .sidebar {
+    width: 100%; /* Take full width on mobile */
+  }
+
+  .main-content {
+    flex: none; /* Do not grow on mobile */
+  }
+}

@@ -1,0 +1,43 @@
+/* up.css */
+/* ... existing styles ... */
+
+.upload-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF; /* Assuming a white background */
+    margin-top: 20px; /* Add space between the upload section and table */
+  }
+  
+  .upload-table table {
+    width: 100%;
+  }
+  
+  .upload-table th,
+  .upload-table td {
+    text-align: left;
+    padding: 8px; /* Adjust padding as needed */
+    border-bottom: 1px solid #E5E5E5; /* Light grey border for rows */
+  }
+  
+  .selected-tag {
+    background-color: #4C9AFF; /* Match the blue color from the image */
+    color: white;
+    padding: 4px;
+    margin-right: 4px; /* Space between tags */
+    border-radius: 4px; /* Rounded corners */
+    display: inline-block; /* Display as a block-level inline element */
+  }
+  
+  .selected-tag button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .tag-dropdown {
+    /* Add styles to match the dropdown to the design */
+  }
+  
+  /* ... more styles as needed ... */
+  
