@@ -76,7 +76,7 @@ class SignIn extends Component {
               <br></br>
 
               <div className="forgot-password">
-                <a href="#">Forgot password?</a>
+                <a href="w">Forgot password?</a>
                 <br></br>
               </div>
               <br></br>
@@ -88,7 +88,7 @@ class SignIn extends Component {
 
             <div className="register-link">
               <br></br>
-              Don't have an account? <a href="#">Register here</a>
+              Don't have an account? <a href="w">Register here</a>
             </div>
           </div>
         </div>
